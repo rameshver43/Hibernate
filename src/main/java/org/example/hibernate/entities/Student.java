@@ -88,5 +88,25 @@ public class Student {
         this.about = about;
     }
 
+    public List<Certificate> getCertificateList() {
+        return certificateList;
+    }
 
+    public void setCertificateList(List<Certificate> certificateList) {
+        this.certificateList = certificateList;
+    }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "studentId=" + studentId +
+                ", name='" + name + '\'' +
+                ", college='" + college + '\'' +
+                ", phone='" + phone + '\'' +
+                ", fathername='" + fathername + '\'' +
+                ", active=" + active +
+                ", about='" + about + '\'' +
+                ", certificateList=" + certificateList +
+                '}';
+    }
 }
